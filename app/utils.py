@@ -2,10 +2,11 @@ import numpy as np
 import cv2
 import tensorflow as tf
 from tensorflow.keras.models import load_model
+import os
 
 
 # Load Trained Model
-MODEL_PATH = "models\VGG16.keras"
+MODEL_PATH = os.path.join("models", "VGG16.keras")
 model = load_model(MODEL_PATH)
 
 
